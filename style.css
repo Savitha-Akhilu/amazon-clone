@@ -1,0 +1,424 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    /* Amazon header style */
+    .amazon-header {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+    .amazon-header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .amazon-header .location {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+    .amazon-header .search-bar {
+      flex-grow: 1;
+      display: flex;
+      margin-right: 20px;
+    }
+    .amazon-header .search-bar input {
+      flex-grow: 1;
+      padding: 5px;
+      border: none;
+    }
+    .amazon-header .search-bar button {
+      background-color: #febd69;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .amazon-header .nav-links {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+    .amazon-header .nav-links div {
+      margin-left: 20px;
+      text-align: center;
+    }
+    .amazon-header .nav-links div span {
+      display: block;
+    }
+    .nav-bar {
+      background-color: #232f3e;
+      color: white;
+      padding: 10px 20px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .nav-bar a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+    }
+        /* .sign-card {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      height: 150px;
+      padding: 15px;
+      text-align: center;
+    } */
+        .below-card {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      height: 250px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .card p {
+      margin: 5px 0;
+      color: gray;
+    }
+    /* New grid card styles */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      /* max-width: 1200px; */
+      margin: 0 auto 40px auto;
+    }
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .card .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .card .image-grid img {
+      width: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+      height: 100px;
+    }
+    .card .desc {
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+      text-align: center;
+    }
+    .card .link {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #007185;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .card .link:hover {
+      text-decoration: underline;
+    }
+.logo img {
+  height: 40px; 
+  width: auto;   
+}
+.carousel {
+  position: relative;
+  /* width: 80%; */
+  /* max-width: 800px; */
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #000;
+  opacity: 1;
+}
+
+
+.carousel {
+  position: relative;
+  margin-bottom: 20px; /* Adds space below the carousel */
+}
+
+.carousel-overlay {
+  position: absolute;
+  bottom: -8px;  
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 97%;
+  z-index: 2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carousel-overlay .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+/* long sliding */
+
+  .long-carousel-section {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .long-carousel-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .long-carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .long-carousel-item {
+    flex: 0 0 auto;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .long-carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* Hide scrollbar */
+  .long-carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Navigation Buttons */
+  .long-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .long-nav-button.left {
+    left: 0;
+    margin-left: 5px;
+  }
+
+  .long-nav-button.right {
+    right: 0;
+    margin-right: 5px;
+  }
+
+  .long-nav-button:hover {
+    background-color: #f0f0f0;
+  }
+
+  
+
+
+         .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      width: 300px;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .product-main-image {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+
+    .product-title {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .product-price .old-price {
+      font-size: 14px;
+      text-decoration: line-through;
+      color: #555;
+      margin-left: 8px;
+    }
+
+    .product-thumbnails {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .product-thumbnails img {
+      width: 48px;
+      height: 48px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      object-fit: cover;
+    }
+
+    .see-more {
+      display: block;
+      color: #007185;
+      font-size: 14px;
+      margin-top: 8px;
+      text-decoration: none;
+    }
+
+    .see-more:hover {
+      text-decoration: underline;
+    }
+
+        .short-grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      /* max-width: 1200px; */
+      margin: 0 auto 40px auto;
+    }
+
